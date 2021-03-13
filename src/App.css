@@ -4,6 +4,9 @@
   --primary-white: #fff;
   --primary-red: #FF4500;
   --primary-dark: rgba(255, 255, 255, 0);
+  --secondary-dark: #191919;
+  --secondary-red: #ef4035;
+  --secondary-red-hover: #f33501;
 }
 
 body {
@@ -11,6 +14,10 @@ body {
 }
 
 /************************** NAVBAR ***************************/
+nav {
+  z-index: 2;
+}
+
 .bg-black {
   background-color: black !important;
 }
@@ -50,4 +57,86 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-red);
+}
+
+/************************** HEADER ***************************/
+
+.header-wraper {
+  position: relative;
+  background: url(background_dark.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/******** TYPED TEXT **********/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+
+}
+
+/******** BUTTON **********/
+
+.btn-main-offer {
+  border: 1px solid var(--secondary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--secondary-red-hover);
+  color: var(--primary-white);
+  transition: .3s ease-in-out;
+}
+
+/******** PARTICLES **********/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/********** MOBILE  **********/
+
+@media(max-width: 768px){
+  .particles-canvas {
+    display: none;
+  }
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+  .navbar-brand {
+    width: 7rem;
+  }
 }
