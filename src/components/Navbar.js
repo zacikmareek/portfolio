@@ -21,10 +21,10 @@ const Navbar = () => {
         <a className="nav-link" href="#">O mne</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Moje skúsenosti</a>
+        <a className="nav-link" href="#">Čo robím</a>
     </li>
     <li className="nav-item">
-        <a className="nav-link" href="#">Moja práca</a>
+        <a className="nav-link" href="#">Skúsenosti</a>
     </li>
     <li className="nav-item">
         <a className="nav-link" href="#">Portfólio</a>
