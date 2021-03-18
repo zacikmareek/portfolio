@@ -1,9 +1,9 @@
 import React from "react";
-import avatar from "../Marek.jpeg";
+import avatar from "../Photo.jpeg";
 
 const About = () => {
     return (
-        <div className="container py-5">
+        <div id="about" className="container py-5">
             <div className="row">
                 <div className="col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
@@ -13,8 +13,19 @@ const About = () => {
     
                 <div className="col-lg-6 col-xm-12">
                     <h1 className="about-heading">About me</h1>
-                    <p>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    <p>Hi! <br/>
+                    My name is Marek. I'm 23 years old self taught programmer. <br/>
+                    In my free time I'm learning new technologies and trying to implement them into some real world projects.
+                    Currently I'm working on my first mobile app, which will be build in Flutter. I'm also working on Instagram clone, that will be written in Laravel.
+                    <br/>
+                    <br/>
+                    I'm also interested in neural networks. "Identification of components in production using machine learning" is the name of my Bachelor thesis,
+                    that I'm currently working on. 
+                    <br/>
+                    <br/>
+                    Last but not least I'm huge fan of Game development. I'm learning Unreal Engine and hoping, that one day I will be able to release my own game.
+                    <br/>
+                    My portfolio section will be updated soon..
                     </p>
                 </div>
             </div>

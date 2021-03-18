@@ -12,6 +12,7 @@
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-green: green;
+  --primary-black: #000000;
 }
 
 
@@ -57,7 +58,7 @@ nav ul li {
   
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-red);
 }
 
@@ -72,7 +73,7 @@ nav ul li {
   background: url(background_dark.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -515,4 +516,27 @@ textarea.form-control {
 .succes-message {
   font-weight: 900;
   color: var(--primary-green);
+}
+
+/************************** FOOTER ***************************/
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-red);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
