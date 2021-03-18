@@ -53,7 +53,7 @@ const openPopupboxFlappyBird = () => {
     return (
         <div className="portfolio-wrapper">
             <div className="container">
-                <h1 className="text-lovercase text-center py-5">.portfolio()</h1>
+                <h1 className="text-uppercase text-center py-5">Portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPopupboxFlappyBird}>
                         <img className="portfolio-image" src={flappyBird} alt="Flappy Bird" />
